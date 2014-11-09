@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuinceCore", "Common\QuinceCore\QuinceCore.vcxproj", "{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuinceSketch", "QuinceSketch\QuinceSketch.vcxproj", "{9058C65A-8F24-4D3D-BDF4-5BE557FCAAD8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1} = {9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1}
+		{1798CD9C-2E88-42DD-94FA-256A11D281F2} = {1798CD9C-2E88-42DD-94FA-256A11D281F2}
+		{74CF42A8-E3F1-4F9A-BDB4-B8B57EB2F65A} = {74CF42A8-E3F1-4F9A-BDB4-B8B57EB2F65A}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{B3164523-50A7-47AB-984E-ED0A68A7E78B}"
+	ProjectSection(SolutionItems) = preProject
+		Common\Common.h = Common\Common.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuinceContext", "Common\QuinceContext\QuinceContext.vcxproj", "{74CF42A8-E3F1-4F9A-BDB4-B8B57EB2F65A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1} = {9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuinceDoc", "Common\QuinceDoc\QuinceDoc.vcxproj", "{1798CD9C-2E88-42DD-94FA-256A11D281F2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1} = {9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1}.Debug|Win32.Build.0 = Debug|Win32
+		{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1}.Release|Win32.ActiveCfg = Release|Win32
+		{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1}.Release|Win32.Build.0 = Release|Win32
+		{9058C65A-8F24-4D3D-BDF4-5BE557FCAAD8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9058C65A-8F24-4D3D-BDF4-5BE557FCAAD8}.Debug|Win32.Build.0 = Debug|Win32
+		{9058C65A-8F24-4D3D-BDF4-5BE557FCAAD8}.Release|Win32.ActiveCfg = Release|Win32
+		{9058C65A-8F24-4D3D-BDF4-5BE557FCAAD8}.Release|Win32.Build.0 = Release|Win32
+		{74CF42A8-E3F1-4F9A-BDB4-B8B57EB2F65A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{74CF42A8-E3F1-4F9A-BDB4-B8B57EB2F65A}.Debug|Win32.Build.0 = Debug|Win32
+		{74CF42A8-E3F1-4F9A-BDB4-B8B57EB2F65A}.Release|Win32.ActiveCfg = Release|Win32
+		{74CF42A8-E3F1-4F9A-BDB4-B8B57EB2F65A}.Release|Win32.Build.0 = Release|Win32
+		{1798CD9C-2E88-42DD-94FA-256A11D281F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1798CD9C-2E88-42DD-94FA-256A11D281F2}.Debug|Win32.Build.0 = Debug|Win32
+		{1798CD9C-2E88-42DD-94FA-256A11D281F2}.Release|Win32.ActiveCfg = Release|Win32
+		{1798CD9C-2E88-42DD-94FA-256A11D281F2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C7C2063-95D8-4EDE-8E0B-E94AB9F88AB1} = {B3164523-50A7-47AB-984E-ED0A68A7E78B}
+		{74CF42A8-E3F1-4F9A-BDB4-B8B57EB2F65A} = {B3164523-50A7-47AB-984E-ED0A68A7E78B}
+		{1798CD9C-2E88-42DD-94FA-256A11D281F2} = {B3164523-50A7-47AB-984E-ED0A68A7E78B}
+	EndGlobalSection
+EndGlobal
